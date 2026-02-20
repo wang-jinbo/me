@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /teaching/
 title: teaching
@@ -12,4 +12,4 @@ This page displays a collection of courses with detailed schedules, materials, a
 
 {% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
 
-{% include courses.liquid %}
+{% include courses.liquid %} -->

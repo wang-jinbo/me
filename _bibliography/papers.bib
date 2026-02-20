@@ -1,43 +1,121 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+---
+---
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@article{huang2026stabilizing,
+  abbr = {Tencent HY},
+  _bibtex_show = {true},
+  title = {Stabilizing {RLVR} via Token-level Gradient Diagnosis and Layerwise Clipping},
+  author = {Huang*, Guanhua and Xu*, Tingqiang and Wang*, Jinbo and Sheng, Guangming and Li, Siheng and Yang, Evander and Li, Kejiao and Li, Yunxiang and Xu, Zenan and Yi, Qi and Deng, Kyrierl and Nan, Ziyuan and Jiang, Yuhao and Zhang, Chenchen and Wu, Taiqiang and Zhang, Feiyuan and Wang, Junhao and Zhou, Bo and Chen, Alex and Wang, Di and Yao, Shunyu},
+  journal = {Tencent HunYuan Research Blog},
+  year = {2026},
+  html = {https://hy.tencent.com/research/100015},
+  tldr = {We present GradLoc: transferring RLVR training collapse diagnostic from black-box heuristics to white-box fine-grained token localization via a distributed bisection, paired with layerwise clipping as a practical safeguard.},
+  selected = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@inproceedings{wang2026fastcatch,
+  abbr = {ICLR},
+  _bibtex_show = {true},
+  title = {Fast Catch-Up, Late Switching: Optimal Batch Size Scheduling via Functional Scaling Laws},
+  author = {Wang*, Jinbo and Li*, Binghui and Zhou, Zhanpeng and Wang, Mingze and Sun, Yuxuan and Zhang, Jiaqi and Cai, Xunliang and Wu, Lei},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year = {2026},
+  html = {https://openreview.net/forum?id=PXWgzUkVwo},
+  tldr = {We study batch size schedule: uncover optimal batch size schedule, fast catch-up effect and later switch strategy from Functional Scaling Laws (FSL) theoretical framework, and bring our insights to LLM pre-training.},
+  selected = {true},
+  abstract = {Batch size scheduling (BSS) plays a critical role in large-scale deep learning training, influencing both optimization dynamics and computational efficiency. Yet, its theoretical foundations remain poorly understood.
+In this work, we show that the **functional scaling law (FSL)** framework introduced in [Li et al. (2025a)](https://arxiv.org/abs/2509.19189) provides a principled lens for analyzing BSS. Specifically, we characterize the optimal BSS under a fixed data budget and show that its structure depends sharply on task difficulty. For easy tasks, optimal schedules keep increasing batch size throughout.  In contrast, for hard tasks, the optimal schedule  maintains small batch sizes for most of training and switches to large batches only in a late stage. 
+To explain the emergence of late switching, we uncover a dynamical mechanism—the **fast catch-up** effect—which also manifests in large language model (LLM) pretraining. After switching from small to large batches, the loss rapidly aligns with the constant large-batch trajectory. Using FSL, we show that this effect stems from rapid forgetting of accumulated gradient noise, with the catch-up speed determined by task difficulty. Crucially, this effect implies that *large batches can be safely deferred to late training* without sacrificing performance, while substantially reducing data consumption. Finally,
+extensive LLM pretraining experiments—covering both Dense and MoE architectures with up to **1.1B** parameters and **1T** tokens—validate our theoretical predictions. Across all settings, late-switch schedules consistently outperform constant-batch and early-switch baselines.},
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@inproceedings{wang2025sharpness,
+  abbr = {ICML},
+  _bibtex_show = {true},
+  title = {The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training},
+  author = {Wang*, Jinbo and Wang*, Mingze and Zhou*, Zhanpeng and Yan, Junchi and E, Weinan and Wu, Lei},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  year = {2025},
+  html = {https://proceedings.mlr.press/v267/wang25dl.html},
+  tldr = {We uncover a persistent Hessian heterogeneity in Transformer and turn it into a practical blockwise learning rate strategy via Edge of Stability (EoS) theory. Our algorithm achieves lower terminal loss and faster pre-training across settings.},
+  selected = {true},
+  abstract = {Transformers have become the cornerstone of modern AI. Unlike traditional architectures, transformers exhibit a distinctive characteristic: diverse types of building blocks, such as embedding layers, normalization layers, self-attention mechanisms, and point-wise feed-forward networks, work collaboratively. Understanding the disparities and interactions among these blocks is therefore important.
+In this paper, we uncover a clear **sharpness disparity** across these blocks, which  intriguingly emerges early in training and persists throughout the training process.
+Building on this insight, we propose a novel **Blockwise Learning Rate (LR)** strategy to accelerate large language model (LLM) pre-training. Specifically, by integrating Blockwise LR into AdamW, we consistently achieve lower terminal loss and nearly $2\times$ speedup compared to vanilla AdamW. This improvement is demonstrated across GPT-2 and LLaMA models, with model sizes ranging from 0.12B to 1.1B and datasets including OpenWebText and MiniPile.
+Finally, we incorporate Blockwise LR into Adam-mini (Zhang et al., 2024), a recently proposed memory-efficient variant of Adam, achieving a combined $2\times$ speedup and $2\times$ memory savings. These results underscore the potential of leveraging the sharpness disparity principle to improve LLM training.},
 }
 
-@article{PhysRev.47.777,
+@inproceedings{wang2024improving,
+  abbr = {NeurIPS},
+  _bibtex_show = {true},
+  title = {Improving Generalization and Convergence by Enhancing Implicit Regularization},
+  author = {Wang, Mingze and Wang, Jinbo and He, Haotian and Wang, Zilin and Huang, Guanhua and Xiong, Feiyu and Li, Zhiyu and E, Weinan and Wu, Lei},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2024},
+  html = {https://doi.org/10.52202/079017-3770},
+  tldr = {Our algorithm enhances implicit regularization to reach flatter minima faster, improving generalization while maintaining stable optimization across vision and LLM setups.},
+  abstract = {In this work, we propose an Implicit Regularization Enhancement (IRE) framework to accelerate the discovery of flat solutions in deep learning, thereby improving generalization and convergence. 
+Specifically, IRE decouples the dynamics of flat and sharp directions, which boosts the sharpness reduction along flat directions while maintaining the training stability in sharp directions. We show that IRE can be practically incorporated with *generic base optimizers* without introducing significant computational overload. Experiments show that IRE consistently improves the generalization performance for image classification tasks across a variety of benchmark datasets (CIFAR-10/100, ImageNet) and models (ResNets and ViTs). 
+Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the pre-training of Llama models (of sizes ranging from 60M to 229M) on datasets including Wikitext-103, Minipile, and Openwebtext. Moreover, we provide theoretical guarantees, showing that IRE can substantially accelerate the convergence towards flat minima in Sharpness-aware Minimization (SAM).},
+}
+
+@article{yang2024memory3,
+  abbr = {JML},
+  _bibtex_show = {true},
+  title = {Memory{³}: Language Modeling with Explicit Memory},
+  author = {Yang, Hongkang and Lin, Zehao and Wang, Wenjin and Wu, Hao and Li, Zhiyu and Tang, Bo and Wei, Wenqiang and Wang, Jinbo and Tang, Zeyun and Song, Shichao and Xi, Chenyang and Yu, Yu and Chen, Kai and Xiong, Feiyu and Tang, Linpeng and E, Weinan},
+  journal = {Journal of Machine Learning},
+  year = {2024},
+  html = {https://arxiv.org/pdf/2407.01178},
+  tldr = {We propose Memory³: Externalizes knowledge into explicit memory, reducing reliance on parameters and improving efficiency toward separating reasoning vs. memory in language modeling.},
+  abstract = {The training and inference of large language models (LLMs) are together a costly process that transports knowledge from raw data to meaningful computation. Inspired by the memory hierarchy of the human brain, we reduce this cost by equipping LLMs with explicit memory, a memory format cheaper than model parameters and text retrieval-augmented generation (RAG). Conceptually, with most of its knowledge externalized to explicit memories, the LLM can enjoy a smaller parameter size, training cost, and inference cost, all proportional to the amount of remaining "abstract knowledge". As a preliminary proof of concept, we train from scratch a 2.4B LLM, which achieves better performance than much larger LLMs as well as RAG models, and maintains higher decoding speed than RAG. The model is named Memory³, since explicit memory is the third form of memory in LLMs after implicit memory (model parameters) and working memory (context key-values). We introduce a memory circuitry theory to support the externalization of knowledge, and present novel techniques including a memory sparsification mechanism that makes storage tractable and a two-stage pretraining scheme that facilitates memory formation.},
+}
+
+@inproceedings{min2023exploring,
+  abbr = {ICONIP},
+  _bibtex_show = {true},
+  title = {Exploring the Integration of Large Language Models into Automatic Speech Recognition Systems: An Empirical Study},
+  author = {Min, Zeping and Wang, Jinbo},
+  booktitle = {International Conference on Neural Information Processing (ICONIP)},
+  year = {2023},
+  html = {https://doi.org/10.1007/978-981-99-8181-6_6},
+  tldr = {We explore the integration of LLMs into automatic speech recognition (ASR) systems to improve accuracy.},
+  abstract = {This paper explores the integration of Large Language Models (LLMs) into Automatic Speech Recognition (ASR) systems to improve transcription accuracy. The increasing sophistication of LLMs, with their in-context learning capabilities and instruction-following behavior, has drawn significant attention in the field of Natural Language Processing (NLP). Our primary focus is to investigate the potential of using an LLM's in-context learning capabilities to enhance the performance of ASR systems, which currently face challenges such as ambient noise, speaker accents, and complex linguistic contexts. We designed a study using the Aishell-1 and LibriSpeech datasets, with ChatGPT and GPT-4 serving as benchmarks for LLM capabilities. Unfortunately, our initial experiments did not yield promising results, indicating the complexity of leveraging LLM's in-context learning for ASR applications. Despite further exploration with varied settings and models, the corrected sentences from the LLMs frequently resulted in higher Word Error Rates (WER), demonstrating the limitations of LLMs in speech applications. This paper provides a detailed overview of these experiments, their results, and implications, establishing that using LLMs' in-context learning capabilities to correct potential errors in speech recognition transcriptions is still a challenging task at the current stage.},
+}
+
+@article{li2026scaling,
+  abbr = {Preprint},
+  _bibtex_show = {true},
+  title = {Scaling-Law Analysis of {SignSGD}: From Feature-Space Linear Regression to {LLM} Pre-training},
+  author = {Li*, Binghui and Wang*, Jianan and Wang*, Jinbo and Wang*, Lean and Wang*, Zilin and Wu, Lei},
+  journal = {ICML 2026 submission},
+  year = {2026},
+  tldr = {We develop a scaling law analysis for SignSGD, to understand why it outperforms SGD in large-scale training.}
+}
+
+@article{wang2026gradpower,
+  abbr = {arXiv},
+  _bibtex_show = {true},
+  title = {{GradPower}: Powering Gradients for Faster Language Model Pre-Training},
+  author = {Wang*, Mingze and Wang*, Jinbo and Zhang, Jiaqi and Wang, Wei and Pei, Peng and Cai, Xunliang and E, Weinan and Wu, Lei},
+  journal = {arXiv preprint},
+  year = {2025},
+  html = {https://arxiv.org/abs/2505.24275},
+  tldr = {We propose GradPower, a lightweight sign-power gradient transformation, to accelerate LLM pre-training.},
+  additional_info = {, ICML 2026 submission},
+  abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters. 
+When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay). 
+The most pronounced gains are observed when training modern mixture-of-experts models with warmup-stable-decay schedules. GradPower also  integrates seamlessly with other state-of-the-art optimizers, such as Muon, yielding further improvements. Finally, we provide  theoretical analyses that reveal the underlying mechanism of GradPower and highlight the influence of gradient noise.},
+}
+
+article{PhysRev.47.777,
   abbr              = {PhysRev},
   title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+  tldr          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
   journal           = {Phys. Rev.},
   location          = {New Jersey},
   volume            = {47},
@@ -49,7 +127,7 @@
   publisher         = aps,
   doi               = {10.1103/PhysRev.47.777},
   url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+  html              = {https://journals.aps.org/pr/tldr/10.1103/PhysRev.47.777},
   pdf               = {example_pdf.pdf},
   altmetric         = {248277},
   dimensions        = {true},
@@ -61,55 +139,3 @@
   inspirehep_id     = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
-}
