@@ -175,7 +175,7 @@
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
     {% endif -%}
     {% if entry.additional_info %}
-      {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
+      {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% endcapture %}
     {% endif %}
     {% capture hook_exists %}{% file_exists _includes/hook/bib.liquid %}{% endcapture %}
     {% if hook_exists == 'true' %}
@@ -260,6 +260,9 @@
         {% else %}
           <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
         {% endif %}
+      {% endif %}
+      {% if entry.wechat %}
+        <a href="{{ entry.wechat }}" class="btn btn-sm z-depth-0" role="button">Wechat</a>
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
