@@ -33,13 +33,14 @@ Hi! My name is <span style='font-weight: bolder;'>Wang</span> Jinbo (王锦波 i
           data-toggle="popover"
           data-placement="top"
           data-html="true"
-          data-content="I perfer to use the East Asian naming convention when possible: family name (Wang) before given name (Jinbo)."
+          data-content="I perfer using eastern naming convention, family name <code>Wang</code> before given name <code>Jinbo</code>. However, I still use western convention <code>Jinbo Wang</code> when necessary, such as in publish."
         >
         </i>
 
-I am a 4th-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), very fortunate to be co-advised by [Prof. <span style='font-weight: bolder; color: inherit'>E</span> Weinan (鄂维南)](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. <span style='font-weight: bolder; color: inherit'>Wu</span> Lei (吴磊)](https://leiwu0.github.io/) since 2025.
+I am a 4th-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), very fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
 
-My research bridges deep learning theory and large-scale LLM training. I study principled optimization methods, grounded in loss landscape geometry and scaling law analysis, to make LLM pre-training and post-training faster and more efficient. 
+My research bridges deep learning theory and large-scale LLM training. I study principled optimization methods, grounded in loss landscape g
+eometry and scaling law analysis, to make LLM pre-training and post-training faster and more efficient. 
 <!-- My recent work spans training acceleration via blockwise learning rates and gradient transformations, optimal batch size scheduling through functional scaling laws, and stabilization techniques for RLVR. My work has been published at **NeurIPS**, **ICML**, and **ICLR**. -->
 
 I am expected to graduate in 2027 and will be on the job market soon. Feel free to reach out!
