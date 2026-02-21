@@ -2,10 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jinbo Wang 王锦波  # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Jinbo
 middle_name: ""
 last_name: Wang
+chinese_name: 王锦波
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: >
