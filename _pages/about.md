@@ -30,13 +30,21 @@ latest_posts:
 
 Hi! My name is **Jinbo Wang** (**王锦波** in Chinese).
 
-I am a 4th-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am very fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
+I am a 4th-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
 
-My research lies at the intersection of large language model (LLM) and deep learning theory. Recently, I have focused on optimization methods for LLM pre-training and post-training, as well as theoretical studies on scaling laws.
+My research bridges deep learning theory and large-scale LLM training. I study principled optimization methods, grounded in loss landscape geometry and scaling law analysis, to make LLM pre-training and post-training faster and more efficient. 
+<!-- My recent work spans training acceleration via blockwise learning rates and gradient transformations, optimal batch size scheduling through functional scaling laws, and stabilization techniques for RLVR. My work has been published at **NeurIPS**, **ICML**, and **ICLR**. -->
 
-I expect to graduate in 2027 and will be on the job market. Feel free to reach out!
+I am expected to graduate in 2027 and will be on the job market. Feel free to reach out!
 
-<a href="mailto:wangjinbo@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a> \| <a href="https://linkedin.com/in/jinbo-wang-95538a191/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> \| <a href="https://scholar.google.com/citations?user=eHr_yNgAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+<a href="mailto:wangjinbo@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a> \| <a href="https://linkedin.com/in/jinbo-wang-95538a191/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> \| <a href="https://scholar.google.com/citations?user=eHr_yNgAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a><i
+          class="fa-solid fa-circle-info ml-1"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-html="true"
+          data-content="¹ Please contact me to get my CV.<br>² Google Scholar struggles to parse my advisor's surname 'E', causing misattributed articles with * and missing citation counts."
+        >
+        </i>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

@@ -389,6 +389,7 @@ nav[data-toggle="toc"] {
 // Popovers
 
 .popover {
+  max-width: 500px;
   background-color: var(--global-bg-color);
   border-color: var(--global-divider-color);
 
