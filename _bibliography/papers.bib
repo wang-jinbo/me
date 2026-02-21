@@ -32,6 +32,56 @@ To explain the emergence of late switching, we uncover a dynamical mechanism—t
 extensive LLM pretraining experiments—covering both Dense and MoE architectures with up to **1.1B** parameters and **1T** tokens—validate our theoretical predictions. Across all settings, late-switch schedules consistently outperform constant-batch and early-switch baselines.},
 }
 
+@article{li2026scaling,
+  abbr = {Preparation},
+  _bibtex_show = {true},
+  title = {Scaling-Law Analysis of {SignSGD}: From Feature-Space Linear Regression to {LLM} Pre-training},
+  author = {Li*, Binghui and Wang*, Jianan and Wang*, Jinbo and Wang*, Lean and Wang*, Zilin and Wu, Lei},
+  journal = {Preparation},
+  year = {2026},
+  additional_info = {, ICML 2026 submission},
+  _selected = {true},
+  tldr = {We develop a scaling law analysis for SignSGD, to understand why it outperforms SGD in large-scale training.}
+}
+
+@article{
+  anonymous2026swemutation,
+  abbr = {Preparation},
+  title={{SWE}-Mutation: Can {LLM}s Generate Reliable Test Suites in Software Engineering?},
+  author={Sun, Yuxuan and others},
+  journal = {Preparation},
+  year={2026},
+  additional_info = {, ACL 2026 submission},
+  note = {Sixth author},
+}
+
+@article{zhou2026how,
+  abbr = {Preparation},
+  title={How Does Local Landscape Geometry Evolve in Language Model Pre-Training?},
+  author={Zhanpeng Zhou and Yuhan Sun and Bingrui Li and Jinbo Wang and Huaijin Wu and Lei Wu and Junchi Yan},
+  year={2025},
+  journal = {Preparation},
+  additional_info = {, ICML 2026 submission},
+  tldr = {We study how loss landscape geometry evolves during LLM pre-training, explaining learning-rate warmup and yielding batch-size scheduling that substantially improve data efficiency.},
+  abstract = {The scale and expense of pre-training language models make efficient hyperparameter tuning essential, yet a principled guidance is still missing. Recent work shows that the geometry of loss landscape shapes training dynamics of neural networks and further informs hyperparameter choices. In this work, we analyze language model pre-training dynamics from a local landscape geometry perspective. Our study reveals two distinct phases. In the early phase, sharpness of the local landscape is initially high, leading to instability and loss plateaus under large learning rates (LRs). Later, the landscape shifts from sharp to flatter regions. This dynamic explains the necessity of LR warmup and further suggests that larger peak LRs require proportionally longer warmup periods. In the late phase, the local landscape is governed by the gradient noise scale. Through diffusion-limit analysis, we prove a depth–flatness trade-off: high noise from smaller batches widens the loss basin, whereas reduced noise from larger batches deepens it. This theory motivates a dynamic batch-size (BS) scheduler that begins with a small BS and increases it late in training. Together, we provide a unified account of loss landscape evolution, which translates into actionable tuning strategies for large-scale pre-training.},
+}
+
+@article{wang2026gradpower,
+  abbr = {Preprint},
+  _bibtex_show = {true},
+  title = {{GradPower}: Powering Gradients for Faster Language Model Pre-Training},
+  author = {Wang*, Mingze and Wang*, Jinbo and Zhang, Jiaqi and Wang, Wei and Pei, Peng and Cai, Xunliang and E, Weinan and Wu, Lei},
+  journal = {arXiv preprint},
+  year = {2025},
+  html = {https://arxiv.org/abs/2505.24275},
+  tldr = {We propose GradPower, a lightweight sign-power gradient transformation, to accelerate LLM pre-training.},
+  additional_info = {, ICML 2026 submission},
+  selected = {true},
+  abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters. 
+When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay). 
+The most pronounced gains are observed when training modern mixture-of-experts models with warmup-stable-decay schedules. GradPower also  integrates seamlessly with other state-of-the-art optimizers, such as Muon, yielding further improvements. Finally, we provide  theoretical analyses that reveal the underlying mechanism of GradPower and highlight the influence of gradient noise.},
+}
+
 @inproceedings{wang2025sharpness,
   abbr = {ICML},
   _bibtex_show = {true},
@@ -56,6 +106,7 @@ Finally, we incorporate Blockwise LR into Adam-mini (Zhang et al., 2024), a rece
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year = {2024},
   html = {https://doi.org/10.52202/079017-3770},
+  selected = {true},
   tldr = {Our algorithm enhances implicit regularization to reach flatter minima faster, improving generalization while maintaining stable optimization across vision and LLM setups.},
   abstract = {In this work, we propose an Implicit Regularization Enhancement (IRE) framework to accelerate the discovery of flat solutions in deep learning, thereby improving generalization and convergence. 
 Specifically, IRE decouples the dynamics of flat and sharp directions, which boosts the sharpness reduction along flat directions while maintaining the training stability in sharp directions. We show that IRE can be practically incorporated with *generic base optimizers* without introducing significant computational overload. Experiments show that IRE consistently improves the generalization performance for image classification tasks across a variety of benchmark datasets (CIFAR-10/100, ImageNet) and models (ResNets and ViTs). 
@@ -70,6 +121,7 @@ Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the
   journal = {Journal of Machine Learning},
   year = {2024},
   html = {https://arxiv.org/pdf/2407.01178},
+  _selected = {true},
   tldr = {We propose Memory³: Externalizes knowledge into explicit memory, reducing reliance on parameters and improving efficiency toward separating reasoning vs. memory in language modeling.},
   abstract = {The training and inference of large language models (LLMs) are together a costly process that transports knowledge from raw data to meaningful computation. Inspired by the memory hierarchy of the human brain, we reduce this cost by equipping LLMs with explicit memory, a memory format cheaper than model parameters and text retrieval-augmented generation (RAG). Conceptually, with most of its knowledge externalized to explicit memories, the LLM can enjoy a smaller parameter size, training cost, and inference cost, all proportional to the amount of remaining "abstract knowledge". As a preliminary proof of concept, we train from scratch a 2.4B LLM, which achieves better performance than much larger LLMs as well as RAG models, and maintains higher decoding speed than RAG. The model is named Memory³, since explicit memory is the third form of memory in LLMs after implicit memory (model parameters) and working memory (context key-values). We introduce a memory circuitry theory to support the externalization of knowledge, and present novel techniques including a memory sparsification mechanism that makes storage tractable and a two-stage pretraining scheme that facilitates memory formation.},
 }
@@ -84,31 +136,6 @@ Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the
   html = {https://doi.org/10.1007/978-981-99-8181-6_6},
   tldr = {We explore the integration of LLMs into automatic speech recognition (ASR) systems to improve accuracy.},
   abstract = {This paper explores the integration of Large Language Models (LLMs) into Automatic Speech Recognition (ASR) systems to improve transcription accuracy. The increasing sophistication of LLMs, with their in-context learning capabilities and instruction-following behavior, has drawn significant attention in the field of Natural Language Processing (NLP). Our primary focus is to investigate the potential of using an LLM's in-context learning capabilities to enhance the performance of ASR systems, which currently face challenges such as ambient noise, speaker accents, and complex linguistic contexts. We designed a study using the Aishell-1 and LibriSpeech datasets, with ChatGPT and GPT-4 serving as benchmarks for LLM capabilities. Unfortunately, our initial experiments did not yield promising results, indicating the complexity of leveraging LLM's in-context learning for ASR applications. Despite further exploration with varied settings and models, the corrected sentences from the LLMs frequently resulted in higher Word Error Rates (WER), demonstrating the limitations of LLMs in speech applications. This paper provides a detailed overview of these experiments, their results, and implications, establishing that using LLMs' in-context learning capabilities to correct potential errors in speech recognition transcriptions is still a challenging task at the current stage.},
-}
-
-@article{li2026scaling,
-  abbr = {Preprint},
-  _bibtex_show = {true},
-  title = {Scaling-Law Analysis of {SignSGD}: From Feature-Space Linear Regression to {LLM} Pre-training},
-  author = {Li*, Binghui and Wang*, Jianan and Wang*, Jinbo and Wang*, Lean and Wang*, Zilin and Wu, Lei},
-  journal = {ICML 2026 submission},
-  year = {2026},
-  tldr = {We develop a scaling law analysis for SignSGD, to understand why it outperforms SGD in large-scale training.}
-}
-
-@article{wang2026gradpower,
-  abbr = {arXiv},
-  _bibtex_show = {true},
-  title = {{GradPower}: Powering Gradients for Faster Language Model Pre-Training},
-  author = {Wang*, Mingze and Wang*, Jinbo and Zhang, Jiaqi and Wang, Wei and Pei, Peng and Cai, Xunliang and E, Weinan and Wu, Lei},
-  journal = {arXiv preprint},
-  year = {2025},
-  html = {https://arxiv.org/abs/2505.24275},
-  tldr = {We propose GradPower, a lightweight sign-power gradient transformation, to accelerate LLM pre-training.},
-  additional_info = {, ICML 2026 submission},
-  abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters. 
-When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay). 
-The most pronounced gains are observed when training modern mixture-of-experts models with warmup-stable-decay schedules. GradPower also  integrates seamlessly with other state-of-the-art optimizers, such as Muon, yielding further improvements. Finally, we provide  theoretical analyses that reveal the underlying mechanism of GradPower and highlight the influence of gradient noise.},
 }
 
 article{PhysRev.47.777,

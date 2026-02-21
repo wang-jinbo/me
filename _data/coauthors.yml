@@ -7,6 +7,8 @@
 "li":
   - firstname: ["Binghui"]
     url: https://libinghui0000.github.io/
+  - firstname: ["Bingrui"]
+    url: https://bingrui-li.github.io/
 
 "zhou":
   - firstname: ["Zhanpeng"]
@@ -35,7 +37,7 @@
 "song":
   - firstname: ["Shichao"]
     url: https://ki-seki.github.io/
-    
+
 # "adams":
 #   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
 #     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
