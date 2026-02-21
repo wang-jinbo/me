@@ -1,0 +1,12 @@
+- degree: "Ph.D. Candidate in Computational Mathematics"
+  institution: "School of Mathematical Sciences, Peking University"
+  year: "2022 ~ present"
+  # advisor: "Prof. Weinan E and Prof. Lei Wu"
+  awards: "China's Industrial Bank Scholarship, Merit Student, **School Scholarship**, Alpha2Fund Scholarship, Third Class Scholarship"
+  image: "pku_red.png"
+
+- degree: "B.S. in Computational and Applied Mathematics"
+  institution: "School of Mathematical Sciences, University of Science and Technology of China"
+  year: "2018 ~ 2022"
+  awards: "First Class Scholarship, **National Scholarship (2/129)**, Third Class Scholarship"
+  image: "ustcblue.jpg"

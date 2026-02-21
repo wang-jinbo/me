@@ -1,3 +1,28 @@
-<div class="publications">
-  {% bibliography --file education --group_by none --query @*[selected=true]* %}
+<div class="news">
+  {% if site.data.education != blank %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% for entry in site.data.education %}
+          <tr>
+            <th scope="row" style="width: 20%">{{ entry.year }}</th>
+            <td>
+              <span style="font-weight: bold;">{{ entry.institution }}</span>
+              <br>
+              {{ entry.degree }}
+              {% if entry.advisor %}
+                <br>
+                <span style="font-style: italic;">Advisor: {{ entry.advisor }}</span>
+              {% endif %}
+              {% if entry.awards %}
+                <br>
+                <span style="font-style: italic;">{{ entry.awards | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No education entries.</p>
+  {% endif %}
 </div>
