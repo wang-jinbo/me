@@ -4,6 +4,18 @@
 ---
 ---
 
+@article{wang2026more,
+  abbr = {Bytedance seed},
+  _bibtex_show = {true},
+  title={More Expressive Feedforward Layers: Part I. Token-Adaptive Mixing of Activations},
+  author={Wang, Mingze and Wang, Jinbo and Xia, Yikuan and Shen, Kai and Zhong, Shu},
+  journal={arXiv preprint arXiv:2605.26647},
+  year={2026},
+  html = {https://arxiv.org/abs/2605.26647},
+  tldr = {We present a new feedforward layer that mixes activations of different tokens in a token-adaptive way.},
+  abstract = {Feedforward network (FFN) layers account for a large fraction of parameters and nonlinear expressivity in Transformer-based large language models (LLMs). Despite the evolution from ReLU and GELU to gated variants such as SwiGLU, most FFN designs still use a single fixed activation function, applying the same nonlinear transformation to all tokens. In this work, we propose Mixture of Activations (MoA), a token-adaptive FFN design that mixes a dictionary of activation functions using lightweight input-dependent gates while sharing the same linear projections. As an input-independent counterpart, we also introduce learnable activations (LA), which form linear combinations of activation functions for both ReLU-type and SwiGLU-type FFNs. Theoretically, we establish strict finite-width expressive separations among fixed-activation FFNs, LA, and MoA: LA strictly contains fixed-activation FFNs, while MoA strictly contains LA, with the additional expressivity arising from input-dependent nonlinear hybridization. Empirically, we evaluate MoA through extensive pre-training experiments on dense and MoE language models ranging from 0.12B to 2B parameters under different token budgets, optimizers, and learning rate schedules. MoA consistently achieves lower terminal loss and exhibits more favorable scaling behavior than well-tuned baselines, with minimal parameter and computational overhead. These results suggest that token-adaptive activation mixing is a simple and effective mechanism for improving FFN expressivity in LLMs.},
+}
+
 @article{huang2026stabilizing,
   abbr = {Tencent HY},
   _bibtex_show = {true},
