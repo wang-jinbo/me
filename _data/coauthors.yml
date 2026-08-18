@@ -3,6 +3,10 @@
     url: https://wmz9.github.io/
   - firstname: ["Lean"]
     url: https://leanwang326.github.io/.github.io/
+  - firstname: ["Zilin"]
+    url: https://scholar.google.com/citations?user=IWS56YcAAAAJ
+  - firstname: ["Qihang"]
+    url: https://scholar.google.com/citations?user=c-lOVfIAAAAJ
 
 "li":
   - firstname: ["Binghui"]
@@ -37,6 +41,38 @@
 "song":
   - firstname: ["Shichao"]
     url: https://ki-seki.github.io/
+
+"chen":
+  - firstname: ["Kun"]
+    url: https://kunyuan.github.io/
+
+"shen":
+  - firstname: ["Kai"]
+    url: https://alanswift.github.io/
+
+"xu":
+  - firstname: ["Tingqiang"]
+    url: https://scholar.google.com/citations?user=HGTHVUgAAAAJ&hl=en
+
+"sun":
+  - firstname: ["Yuxuan"]
+    url: https://scholar.google.com/citations?user=j9fZB5gAAAAJ
+
+"zhang":
+  - firstname: ["Jiaqi"]
+    url: https://scholar.google.com/citations?user=hvWVWfIAAAAJ
+
+"xiong":
+  - firstname: ["Feiyu"]
+    url: https://scholar.google.com/citations?user=GOKgLdQAAAAJ
+
+"yang":
+  - firstname: ["Hongkang"]
+    url: https://scholar.google.com/citations?user=OY7zD60AAAAJ
+
+"min":
+  - firstname: ["Zeping"]
+    url: https://scholar.google.com/citations?user=7Mu8EaoAAAAJ
 
 # "adams":
 #   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
