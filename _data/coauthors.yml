@@ -13,6 +13,8 @@
     url: https://libinghui0000.github.io/
   - firstname: ["Bingrui"]
     url: https://bingrui-li.github.io/
+  - firstname: ["Kejiao"]
+    url: https://scholar.google.com/citations?user=22oZlaUAAAAJ
 
 "zhou":
   - firstname: ["Zhanpeng"]
@@ -61,6 +63,8 @@
 "zhang":
   - firstname: ["Jiaqi"]
     url: https://scholar.google.com/citations?user=hvWVWfIAAAAJ
+  - firstname: ["Chenchen"]
+    url: https://xxzcc.github.io/
 
 "xiong":
   - firstname: ["Feiyu"]
@@ -73,6 +77,10 @@
 "min":
   - firstname: ["Zeping"]
     url: https://scholar.google.com/citations?user=7Mu8EaoAAAAJ
+
+"cai":
+  - firstname: ["Xunliang"]
+    url: https://scholar.google.com/citations?user=ZEAfy1QAAAAJ
 
 # "adams":
 #   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
