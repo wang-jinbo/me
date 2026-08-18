@@ -8,11 +8,12 @@
   abbr = {Bytedance seed},
   _bibtex_show = {true},
   title={More Expressive Feedforward Layers: Part I. Token-Adaptive Mixing of Activations},
-  author={Wang, Mingze and Wang, Jinbo and Xia, Yikuan and Shen, Kai and Zhong, Shu},
+  author={Wang*, Mingze and Wang*, Jinbo and Xia, Yikuan and Shen, Kai and Zhong, Shu},
   journal={arXiv preprint arXiv:2605.26647},
   year={2026},
   html = {https://arxiv.org/abs/2605.26647},
-  tldr = {We present a new feedforward layer that mixes activations of different tokens in a token-adaptive way.},
+  additional_info = {, In submission},
+  tldr = {We propose Token-Adaptive Mixing, an architectural enhancement for feedforward layers that adaptively mixes activations based on token characteristics, improving expressiveness and performance in language models.},
   abstract = {Feedforward network (FFN) layers account for a large fraction of parameters and nonlinear expressivity in Transformer-based large language models (LLMs). Despite the evolution from ReLU and GELU to gated variants such as SwiGLU, most FFN designs still use a single fixed activation function, applying the same nonlinear transformation to all tokens. In this work, we propose Mixture of Activations (MoA), a token-adaptive FFN design that mixes a dictionary of activation functions using lightweight input-dependent gates while sharing the same linear projections. As an input-independent counterpart, we also introduce learnable activations (LA), which form linear combinations of activation functions for both ReLU-type and SwiGLU-type FFNs. Theoretically, we establish strict finite-width expressive separations among fixed-activation FFNs, LA, and MoA: LA strictly contains fixed-activation FFNs, while MoA strictly contains LA, with the additional expressivity arising from input-dependent nonlinear hybridization. Empirically, we evaluate MoA through extensive pre-training experiments on dense and MoE language models ranging from 0.12B to 2B parameters under different token budgets, optimizers, and learning rate schedules. MoA consistently achieves lower terminal loss and exhibits more favorable scaling behavior than well-tuned baselines, with minimal parameter and computational overhead. These results suggest that token-adaptive activation mixing is a simple and effective mechanism for improving FFN expressivity in LLMs.},
 }
 
@@ -30,12 +31,12 @@
 }
 
 @inproceedings{wang2026fastcatch,
-  abbr = {ICLR},
+  abbr = {ICLR 2026},
   _bibtex_show = {true},
   title = {Fast Catch-Up, Late Switching: Optimal Batch Size Scheduling via Functional Scaling Laws},
   author = {Wang*, Jinbo and Li*, Binghui and Zhou, Zhanpeng and Wang, Mingze and Sun, Yuxuan and Zhang, Jiaqi and Cai, Xunliang and Wu, Lei},
   booktitle = {International Conference on Learning Representations (ICLR)},
-  year = {2026},
+  year = {2025},
   html = {https://openreview.net/forum?id=PXWgzUkVwo},
   tldr = {We study batch size schedule: uncover optimal batch size schedule, fast catch-up effect and later switch strategy from Functional Scaling Laws (FSL) theoretical framework, and bring our insights to LLM pre-training.},
   selected = {true},
@@ -44,6 +45,7 @@ In this work, we show that the **functional scaling law (FSL)** framework introd
 To explain the emergence of late switching, we uncover a dynamical mechanism—the **fast catch-up** effect—which also manifests in large language model (LLM) pretraining. After switching from small to large batches, the loss rapidly aligns with the constant large-batch trajectory. Using FSL, we show that this effect stems from rapid forgetting of accumulated gradient noise, with the catch-up speed determined by task difficulty. Crucially, this effect implies that *large batches can be safely deferred to late training* without sacrificing performance, while substantially reducing data consumption. Finally,
 extensive LLM pretraining experiments—covering both Dense and MoE architectures with up to **1.1B** parameters and **1T** tokens—validate our theoretical predictions. Across all settings, late-switch schedules consistently outperform constant-batch and early-switch baselines.},
 }
+% right, 2025 accepted, 2026 conference
 
 @inproceedings{li2026scaling,
   abbr = {ICLR Workshop},
@@ -57,6 +59,42 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
   html = {https://openreview.net/forum?id=KQfV97S12I},
   abstract = {Despite their widespread use in deep learning, the mechanisms underlying the effectiveness of adaptive gradient methods in large-scale training remain poorly understood. In this work, we provide a scaling-law analysis of SignSGD, a minimal yet expressive optimizer that captures the core coordinate-wise adaptivity shared by more sophisticated adaptive methods. We consider feature-space linear regression with power-law spectra, which allows us to precisely characterize the training dynamics of SignSGD. Specifically, we derive explicit scaling laws for SignSGD that accurately describe the loss dynamics. By further analyzing the data-limited regime, we characterize the phase diagram of SignSGD training and quantify the superiority of SignSGD in data scaling. We also show that SignSGD admits a substantially larger critical batch size than SGD, which gives SignSGD more benefits from large-batch training. Finally, we systematically validate our theoretical predictions through large-scale LLM pre-training experiments, demonstrating that the scaling laws uncovered here extend beyond the controlled model and are predictive of practical training behavior.},
 }
+@article{wang2026counterexamples,
+  abbr = {arXiv},
+  _bibtex_show = {true},
+  title = {When Complementary Measurements Count the Same Classical Bit Twice: Counterexamples to {CQC}, {ECQC}, and Complementarity-Based Certification},
+  author = {Wang, Jinbo and Wang, Qihang and Chen, Kun},
+  journal = {arXiv preprint arXiv:2608.03828},
+  year = {2026},
+  html = {https://arxiv.org/abs/2608.03828},
+  additional_info = {, In submission},
+  tldr = {We expose classical double counting in complementary measurements and disprove CQC, ECQC, and related quantum-correlation certification.},
+}
+
+@article{wang2026complementary,
+  abbr = {arXiv},
+  _bibtex_show = {true},
+  title = {Complementary Quantum Correlations Are Universal for Qubits},
+  author = {Wang, Jinbo and Wang, Qihang and Chen, Kun},
+  journal = {arXiv preprint arXiv:2608.04916},
+  year = {2026},
+  html = {https://arxiv.org/abs/2608.04916},
+  additional_info = {, In submission},
+  tldr = {We prove complementary correlation bounds for all two-qubit states, enabling tomography-free certification of quantum resources.},
+}
+
+@article{wang2026shor,
+  abbr = {Preparation},
+  _bibtex_show = {true},
+  title = {A Proof of {Shor}'s Orthogonal-Measurement Conjecture and the Structure of Information-Optimal Quantum Measurements},
+  author = {Wang*, Jinbo and Wang*, Qihang and Chen, Kun},
+  journal = {Preparation},
+  year = {2026},
+  selected = {true},
+  additional_info = {, In submission},
+  html = {https://doi.org/10.5281/zenodo.21911604},
+  tldr = {We prove Shor's orthogonal-measurement conjecture, revealing the structure of information-optimal quantum measurements and advancing quantum information theory.},
+}
 
 @inproceedings{anonymous2026swemutation,
   abbr = {ACL Findings},
@@ -66,6 +104,7 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
   abstract = {Evaluating software engineering capabilities has become a core component of modern large language models (LLMs); however, the key bottleneck hindering further scaling lies not in the scarcity of high-quality solutions, but in the lack of high-quality test suites. Test suites are indispensable both for synthesizing program repair trajectories and for providing precise feedback signals in reinforcement learning. Unfortunately, due to the high cost and difficulty of annotation, high-quality test suites have long been hard to obtain, while those automatically generated by LLMs tend to be superficial and lack sufficient discriminative power. As a first step toward constructing high-quality test suites, we introduce SWE-Mutation, a benchmark for evaluating LLM-generated test suites. The benchmark characterizes test suites by introducing systematically mutated solutions that attempt to ``fool'' the test suites and pass validation. We further propose an agentic, language-agnostic framework for automatically generating complex mutants. Our benchmark consists of 2,636 mutated variants derived from 800 original instances and includes a multilingual subset spanning nine programming languages. Experiments on seven LLMs reveal that even DeepSeek-V3.1 achieves only 10.20% verification and 36.15% detection rates, highlighting the inadequacy of current LLMs. Additionally, our agentic mutation strategy enhances realism, reducing average detection rates from 71.04% to 39.81% compared to conventional methods. These findings expose persistent deficiencies in the ability of current LLMs to generate reliable and discriminative test suites.},
   year={2026},
+  html = {https://aclanthology.org/2026.findings-acl.1976/},
 }
 
 @article{zhou2026how,
@@ -80,22 +119,23 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
 }
 
 @inproceedings{wang2026gradpower,
-  abbr = {ICML},
+  abbr = {ICML 2026},
   _bibtex_show = {true},
   title = {{GradPower}: Powering Gradients for Faster Language Model Pre-Training},
   author = {Wang*, Jinbo and Wang*, Mingze and Zhang, Jiaqi and Wang, Wei and Pei, Peng and Cai, Xunliang and E, Weinan and Wu, Lei},
   booktitle = {International Conference on Machine Learning (ICML)},
-  year = {2026},
-  html = {https://arxiv.org/abs/2505.24275},
+  year = {2025},
+  html = {https://openreview.net/forum?id=BBAmK1eiCI},
   tldr = {We propose GradPower, a lightweight sign-power gradient transformation, to accelerate LLM pre-training.},
   selected = {false},
   abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters. 
 When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay). 
 The most pronounced gains are observed when training modern mixture-of-experts models with warmup-stable-decay schedules. GradPower also  integrates seamlessly with other state-of-the-art optimizers, such as Muon, yielding further improvements. Finally, we provide  theoretical analyses that reveal the underlying mechanism of GradPower and highlight the influence of gradient noise.},
 }
+% right, 2025 accepted, 2026 conference
 
 @inproceedings{wang2025sharpness,
-  abbr = {ICML},
+  abbr = {ICML 2025},
   _bibtex_show = {true},
   title = {The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training},
   author = {Wang*, Jinbo and Wang*, Mingze and Zhou*, Zhanpeng and Yan, Junchi and E, Weinan and Wu, Lei},
@@ -111,13 +151,13 @@ Finally, we incorporate Blockwise LR into Adam-mini (Zhang et al., 2024), a rece
 }
 
 @inproceedings{wang2024improving,
-  abbr = {NeurIPS},
+  abbr = {NeurIPS 2024},
   _bibtex_show = {true},
   title = {Improving Generalization and Convergence by Enhancing Implicit Regularization},
   author = {Wang, Mingze and Wang, Jinbo and He, Haotian and Wang, Zilin and Huang, Guanhua and Xiong, Feiyu and Li, Zhiyu and E, Weinan and Wu, Lei},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year = {2024},
-  html = {https://papers.nips.cc/paper_files/paper/2024/hash/d712c8625fd97424c9744019b28dca21-Abstract-Conference.html},
+  html = {https://doi.org/10.52202/079017-3770},
   selected = {true},
   tldr = {Our algorithm enhances implicit regularization to reach flatter minima faster, improving generalization while maintaining stable optimization across vision and LLM setups.},
   abstract = {In this work, we propose an Implicit Regularization Enhancement (IRE) framework to accelerate the discovery of flat solutions in deep learning, thereby improving generalization and convergence. 
@@ -140,7 +180,7 @@ Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the
 }
 
 @inproceedings{min2023exploring,
-  abbr = {ICONIP},
+  abbr = {ICONIP 2023},
   _bibtex_show = {true},
   title = {Exploring the Integration of Large Language Models into Automatic Speech Recognition Systems: An Empirical Study},
   author = {Min, Zeping and Wang, Jinbo},
