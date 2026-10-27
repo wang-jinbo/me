@@ -9,6 +9,8 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+{{ site.data.publication_notes.chronology }}
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}

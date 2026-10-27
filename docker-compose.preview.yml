@@ -1,0 +1,13 @@
+services:
+  jekyll:
+    image: jinbo-al-folio-v1:local
+    build: .
+    command: /srv/jekyll/bin/entry_point.sh
+    ports:
+      - "127.0.0.1:8081:8080"
+      - "127.0.0.1:35730:35729"
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      JEKYLL_ENV: development
+      BUNDLE_FROZEN: "true"

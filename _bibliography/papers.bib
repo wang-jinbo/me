@@ -52,7 +52,7 @@
   tldr = {We prove complementary correlation bounds for all two-qubit states, enabling tomography-free certification of quantum resources.},
 }
 @inproceedings{wang2026more,
-  abbr = {NeurIPS 2026},
+  abbr = {NeurIPS},
   _bibtex_show = {true},
   title={More Expressive Feedforward Layers: Part I. Token-Adaptive Mixing of Activations},
   author={Wang*, Mingze and Wang*, Jinbo and Xia, Yikuan and Shen, Kai and Zhong, Shu},
@@ -102,7 +102,8 @@
 }
 
 @inproceedings{wang2026fastcatch,
-  abbr = {ICLR 2026},
+  abbr = {ICLR},
+  conference_year = {2026},
   _bibtex_show = {true},
   title = {Fast Catch-Up, Late Switching: Optimal Batch Size Scheduling via Functional Scaling Laws},
   author = {Wang*, Jinbo and Li*, Binghui and Zhou, Zhanpeng and Wang, Mingze and Sun, Yuxuan and Zhang, Jiaqi and Cai, Xunliang and Wu, Lei},
@@ -112,7 +113,7 @@
   tldr = {We study batch size schedule: uncover optimal batch size schedule, fast catch-up effect and later switch strategy from Functional Scaling Laws (FSL) theoretical framework, and bring our insights to LLM pre-training.},
   selected = {true},
   abstract = {Batch size scheduling (BSS) plays a critical role in large-scale deep learning training, influencing both optimization dynamics and computational efficiency. Yet, its theoretical foundations remain poorly understood.
-In this work, we show that the **functional scaling law (FSL)** framework introduced in [Li et al. (2025a)](https://arxiv.org/abs/2509.19189) provides a principled lens for analyzing BSS. Specifically, we characterize the optimal BSS under a fixed data budget and show that its structure depends sharply on task difficulty. For easy tasks, optimal schedules keep increasing batch size throughout.  In contrast, for hard tasks, the optimal schedule  maintains small batch sizes for most of training and switches to large batches only in a late stage. 
+In this work, we show that the **functional scaling law (FSL)** framework introduced in [Li et al. (2025a)](https://arxiv.org/abs/2509.19189) provides a principled lens for analyzing BSS. Specifically, we characterize the optimal BSS under a fixed data budget and show that its structure depends sharply on task difficulty. For easy tasks, optimal schedules keep increasing batch size throughout.  In contrast, for hard tasks, the optimal schedule  maintains small batch sizes for most of training and switches to large batches only in a late stage.
 To explain the emergence of late switching, we uncover a dynamical mechanism—the **fast catch-up** effect—which also manifests in large language model (LLM) pretraining. After switching from small to large batches, the loss rapidly aligns with the constant large-batch trajectory. Using FSL, we show that this effect stems from rapid forgetting of accumulated gradient noise, with the catch-up speed determined by task difficulty. Crucially, this effect implies that *large batches can be safely deferred to late training* without sacrificing performance, while substantially reducing data consumption. Finally,
 extensive LLM pretraining experiments—covering both Dense and MoE architectures with up to **1.1B** parameters and **1T** tokens—validate our theoretical predictions. Across all settings, late-switch schedules consistently outperform constant-batch and early-switch baselines.},
 }
@@ -130,7 +131,8 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
 }
 
 @inproceedings{wang2026gradpower,
-  abbr = {ICML 2026},
+  abbr = {ICML},
+  conference_year = {2026},
   _bibtex_show = {true},
   title = {{GradPower}: Powering Gradients for Faster Language Model Pre-Training},
   author = {Wang*, Jinbo and Wang*, Mingze and Zhang, Jiaqi and Wang, Wei and Pei, Peng and Cai, Xunliang and E, Weinan and Wu, Lei},
@@ -139,14 +141,14 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
   html = {https://openreview.net/forum?id=BBAmK1eiCI},
   tldr = {We propose GradPower, a lightweight sign-power gradient transformation, to accelerate LLM pre-training.},
   selected = {false},
-  abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters. 
-When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay). 
+  abstract = {We propose **GradPower**, a lightweight gradient-transformation technique for accelerating language model pre-training. Given a gradient vector $\boldsymbol{g}=(g\_{i})\_{i}$, GradPower first applies the elementwise `sign-power` transformation: $ \varphi_p(\boldsymbol{g}) = \left({\rm sign}(g\_i)|g\_i|^p\right)\_{i} $ for a fixed $p\gt;0$, and then feeds the transformed gradient  into a base optimizer. Notably, GradPower requires only a **single-line code change** and no modifications to the base optimizer’s internal logic, including the hyperparameters.
+When applied to AdamW (termed **AdamWPower**), GradPower consistently achieves lower terminal loss across diverse architectures (LLaMA, Qwen2MoE), parameter scales (66M to 2B), datasets (C4, OpenWebText), and learning-rate schedules (cosine, warmup-stable-decay).
 The most pronounced gains are observed when training modern mixture-of-experts models with warmup-stable-decay schedules. GradPower also  integrates seamlessly with other state-of-the-art optimizers, such as Muon, yielding further improvements. Finally, we provide  theoretical analyses that reveal the underlying mechanism of GradPower and highlight the influence of gradient noise.},
 }
 % right, 2025 accepted, 2026 conference
 
 @inproceedings{wang2025sharpness,
-  abbr = {ICML 2025},
+  abbr = {ICML},
   _bibtex_show = {true},
   title = {The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training},
   author = {Wang*, Jinbo and Wang*, Mingze and Zhou*, Zhanpeng and Yan, Junchi and E, Weinan and Wu, Lei},
@@ -162,7 +164,7 @@ Finally, we incorporate Blockwise LR into Adam-mini (Zhang et al., 2024), a rece
 }
 
 @inproceedings{wang2024improving,
-  abbr = {NeurIPS 2024},
+  abbr = {NeurIPS},
   _bibtex_show = {true},
   title = {Improving Generalization and Convergence by Enhancing Implicit Regularization},
   author = {Wang, Mingze and Wang, Jinbo and He, Haotian and Wang, Zilin and Huang, Guanhua and Xiong, Feiyu and Li, Zhiyu and E, Weinan and Wu, Lei},
@@ -171,8 +173,8 @@ Finally, we incorporate Blockwise LR into Adam-mini (Zhang et al., 2024), a rece
   html = {https://doi.org/10.52202/079017-3770},
   selected = {true},
   tldr = {Our algorithm enhances implicit regularization to reach flatter minima faster, improving generalization while maintaining stable optimization across vision and LLM setups.},
-  abstract = {In this work, we propose an Implicit Regularization Enhancement (IRE) framework to accelerate the discovery of flat solutions in deep learning, thereby improving generalization and convergence. 
-Specifically, IRE decouples the dynamics of flat and sharp directions, which boosts the sharpness reduction along flat directions while maintaining the training stability in sharp directions. We show that IRE can be practically incorporated with *generic base optimizers* without introducing significant computational overload. Experiments show that IRE consistently improves the generalization performance for image classification tasks across a variety of benchmark datasets (CIFAR-10/100, ImageNet) and models (ResNets and ViTs). 
+  abstract = {In this work, we propose an Implicit Regularization Enhancement (IRE) framework to accelerate the discovery of flat solutions in deep learning, thereby improving generalization and convergence.
+Specifically, IRE decouples the dynamics of flat and sharp directions, which boosts the sharpness reduction along flat directions while maintaining the training stability in sharp directions. We show that IRE can be practically incorporated with *generic base optimizers* without introducing significant computational overload. Experiments show that IRE consistently improves the generalization performance for image classification tasks across a variety of benchmark datasets (CIFAR-10/100, ImageNet) and models (ResNets and ViTs).
 Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the pre-training of Llama models (of sizes ranging from 60M to 229M) on datasets including Wikitext-103, Minipile, and Openwebtext. Moreover, we provide theoretical guarantees, showing that IRE can substantially accelerate the convergence towards flat minima in Sharpness-aware Minimization (SAM).},
 }
 
@@ -191,7 +193,7 @@ Surprisingly, IRE also  achieves a $2\times$ *speed-up* compared to AdamW in the
 }
 
 @inproceedings{min2023exploring,
-  abbr = {ICONIP 2023},
+  abbr = {ICONIP},
   _bibtex_show = {true},
   title = {Exploring the Integration of Large Language Models into Automatic Speech Recognition Systems: An Empirical Study},
   author = {Min, Zeping and Wang, Jinbo},

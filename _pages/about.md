@@ -43,29 +43,29 @@ Hi! My name is <span style='font-weight: bolder;'>Wang</span> Jinbo (王锦波 i
           data-toggle="popover"
           data-placement="top"
           data-html="true"
-          data-content="I perfer using eastern naming convention, family name <code>Wang</code> before given name <code>Jinbo</code>. However, I still use western convention <code>Jinbo Wang</code> when necessary, such as in publish."
+          data-content="I perfer using eastern naming convention, family name Wang before given name Jinbo. However, I still use western convention <code>Jinbo Wang</code> when necessary, such as in publish."
         >
 </i>
 
 I am a final-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), very fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
 
-I have interned and researched at [Citadel Securities](https://www.citadelsecurities.com/), [Tencent Hunyuan](https://hy.tencent.com/), [Meituan LongCat](https://longcat.ai/), and [IAAR Shanghai (now MemTensor)](https://memtensor.com/).
+My experience spans research and internships at [Citadel Securities](https://www.citadelsecurities.com/), [Tencent Hunyuan](https://hy.tencent.com/), [Meituan LongCat](https://longcat.ai/), and [IAAR Shanghai (now MemTensor)](https://memtensor.com/).
 
-My research focuses on two directions:
+My current research focuses on two directions:
 
 - **Optimization in LLM training:** making post-training and pre-training faster and more efficient.
 - **Agents for Insightful Research:** building more effective agents that solve practical problems.
 
 <!-- My recent work spans training acceleration via blockwise learning rates and gradient transformations, optimal batch size scheduling through functional scaling laws, and stabilization techniques for RLVR. My work has been published at **NeurIPS**, **ICML**, and **ICLR**. -->
 
-I am expected to graduate in 2027 and am on the job market. Feel free to reach out!
+I expect to graduate in 2027 and am currently on the job market. Feel free to reach out!
 
 <a href="mailto:wangjinbo@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a> \| <a href="https://linkedin.com/in/jinbo-wang-95538a191/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> \| <a href="https://scholar.google.com/citations?user=eHr_yNgAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a><i
           class="fa-solid fa-circle-info ml-1"
           data-toggle="popover"
           data-placement="bottom"
           data-html="true"
-          data-content="¹ Please contact me for my CV, thanks.<br>² Google Scholar struggles to parse my advisor's surname 'E', causing misattributed articles and missing citation counts."
+          data-content="¹ Please contact me for my CV, thanks.&#10;² Google Scholar struggles to parse my advisor's surname 'E', causing misattributed articles and missing citation counts."
         >
 </i>
 

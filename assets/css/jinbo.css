@@ -1,0 +1,17 @@
+.af-popover {
+  max-width: min(500px, calc(100vw - 16px));
+  white-space: pre-line;
+}
+.publications div.tldr.hidden {
+  display: none;
+  border: 1px dashed var(--global-text-color);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.publications div.tldr.hidden.open {
+  display: block;
+}
+
+.font-weight-bolder {
+  font-weight: 700;
+}
