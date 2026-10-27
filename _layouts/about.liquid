@@ -62,12 +62,30 @@ layout: default
       {% include education.liquid %}
     {% endif %}
 
+    <!-- Publications link -->
+    {% if page.publications_link %}
+      <h2>Publications</h2>
+      <p>See the <a href="{{ '/publications/' | relative_url }}">publications page</a> for the full list.</p>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Service and teaching -->
+    {% if page.academic_service or page.teaching %}
+      <h2>
+        Service{% if page.teaching %} and Teaching{% endif %}
+      </h2>
+      {{ page.academic_service | markdownify }}
+      {% if page.teaching %}
+        <p>Teaching assistant</p>
+        {{ page.teaching | markdownify }}
+      {% endif %}
     {% endif %}
 
     <!-- Social -->

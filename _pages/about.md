@@ -14,9 +14,19 @@ profile:
   #   <p>Your City, State 12345</p>
 
 education: true # includes education section from education.bib
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+selected_papers: false
+publications_link: true
+academic_service: |
+  Reviewer for
 
+  - **Conferences:** Conference on Neural Information Processing Systems (NeurIPS); International Conference on Machine Learning (ICML, **Gold Reviewer**); International Conference on Learning Representations (ICLR).
+  - **Journals:** Transactions on Machine Learning Research (TMLR); IEEE Transactions on Affective Computing.
+teaching: |
+  - **Probability Theory and Mathematical Statistics B**, Peking University (2022 Fall).
+  - **Linear Algebra A2**, University of Science and Technology of China (2021 Fall).
+  - **Complex Analysis H**, University of Science and Technology of China (2021 Spring).
+  - **Mathematical Analysis B1**, University of Science and Technology of China (2022 Fall).
+social: false # includes social icons at the bottom of the page
 announcements:
   enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
@@ -35,15 +45,20 @@ Hi! My name is <span style='font-weight: bolder;'>Wang</span> Jinbo (王锦波 i
           data-html="true"
           data-content="I perfer using eastern naming convention, family name <code>Wang</code> before given name <code>Jinbo</code>. However, I still use western convention <code>Jinbo Wang</code> when necessary, such as in publish."
         >
-        </i>
+</i>
 
-I am a 4th-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), very fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
+I am a final-year Ph.D. candidate in Computational Mathematics at [School of Mathematical Sciences](https://www.math.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), very fortunate to be co-advised by [Prof. Weinan E](https://web.math.princeton.edu/~weinan/) since 2022 and [Prof. Lei Wu](https://leiwu0.github.io/) since 2025.
 
-My research bridges deep learning theory and large-scale LLM training. I study principled optimization methods, grounded in loss landscape g
-eometry and scaling law analysis, to make LLM pre-training and post-training faster and more efficient. 
+I have interned and researched at [Citadel Securities](https://www.citadelsecurities.com/), [Tencent Hunyuan](https://hy.tencent.com/), [Meituan LongCat](https://longcat.ai/), and [IAAR Shanghai (now MemTensor)](https://memtensor.com/).
+
+My research focuses on two directions:
+
+- **Optimization in LLM training:** making post-training and pre-training faster and more efficient.
+- **Agents for Insightful Research:** building more effective agents that solve practical problems.
+
 <!-- My recent work spans training acceleration via blockwise learning rates and gradient transformations, optimal batch size scheduling through functional scaling laws, and stabilization techniques for RLVR. My work has been published at **NeurIPS**, **ICML**, and **ICLR**. -->
 
-I am expected to graduate in 2027 and will be on the job market soon. Feel free to reach out!
+I am expected to graduate in 2027 and am on the job market. Feel free to reach out!
 
 <a href="mailto:wangjinbo@ustc.edu"><i class="fa-solid fa-envelope"></i> Email</a> \| <a href="https://linkedin.com/in/jinbo-wang-95538a191/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> \| <a href="https://scholar.google.com/citations?user=eHr_yNgAAAAJ"><i class="ai ai-google-scholar"></i> Google Scholar</a><i
           class="fa-solid fa-circle-info ml-1"
@@ -52,7 +67,7 @@ I am expected to graduate in 2027 and will be on the job market soon. Feel free 
           data-html="true"
           data-content="¹ Please contact me for my CV, thanks.<br>² Google Scholar struggles to parse my advisor's surname 'E', causing misattributed articles and missing citation counts."
         >
-        </i>
+</i>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

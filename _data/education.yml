@@ -2,7 +2,12 @@
   institution: "School of Mathematical Sciences, Peking University"
   year: "2022 ~ present"
   # advisor: "Prof. Weinan E and Prof. Lei Wu"
-  awards: "China's Industrial Bank Scholarship, Merit Student, <span style='font-weight: bolder;'>School Scholarship</span>, Alpha2Fund Scholarship,<br> Third Class Scholarship, <span style='font-weight: bolder;'>Century Frontier Outstanding Young Scholars Award</span>"
+  awards: >-
+    China's Industrial Bank Scholarship, Alpha2Fund Scholarship, Third Class Scholarship,
+    <a href="https://ss.pku.edu.cn/xwzx/tzgg/01264b528d224277bf9c48ba9f0f7455.htm"><strong>May Fourth Scholarship</strong></a><i class="fa-solid fa-circle-info ml-1" data-toggle="popover" data-placement="top" data-trigger="hover focus" tabindex="0" role="button" aria-label="About the May Fourth Scholarship" data-content="PKU's highest annual university-established scholarship"></i><br>
+    Merit Student, Outstanding Research Award, <strong>College Scholarship</strong>,
+    <a href="https://math.pku.edu.cn/yjs/yjspy/yjszztx/index.htm"><strong>Principal Scholarship</strong></a><i class="fa-solid fa-circle-info ml-1" data-toggle="popover" data-placement="top" data-trigger="hover focus" tabindex="0" role="button" aria-label="About the Principal Scholarship" data-content="PKU's highest scholarship for doctoral students"></i><br>
+    <strong>Century Frontier Outstanding Young Scholars Award</strong> (top 10)
   image: "pku_red.png"
 
 - degree: "B.S. in Computational and Applied Mathematics"

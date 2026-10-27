@@ -4,16 +4,28 @@
 ---
 ---
 
+@article{li2026largerbatches,
+  abbr = {Tencent HY},
+  _bibtex_show = {true},
+  title = {When Do Larger Batches Help Scale {LLM} Reinforcement Learning?},
+  author = {Li, Ziniu and Wang, Jinbo and Huang, Guanhua and Zhang, Feiyuan and Li, Pengbo and Chen, Alex},
+  journal = {Tencent HunYuan Research Blog},
+  year = {2026},
+  arxiv = {2608.29296},
+  blog = {https://hy.tencent.com/research/100116?langVersion=zh},
+  tldr = {We study when larger batches accelerate LLM reinforcement learning, separating sample efficiency from system throughput and providing practical guidance for batch-size selection and learning-rate retuning.},
+}
+
 @article{wang2026shor,
-  abbr = {Preparation},
+  abbr = {arXiv},
   _bibtex_show = {true},
   title = {A Proof of {Shor}'s Orthogonal-Measurement Conjecture and the Structure of Information-Optimal Quantum Measurements},
   author = {Wang*, Jinbo and Wang*, Qihang and Chen, Kun},
-  journal = {Preparation},
+  journal = {arXiv preprint arXiv:2609.27992},
   year = {2026},
   selected = {false},
   additional_info = {, In submission},
-  html = {https://doi.org/10.5281/zenodo.21911604},
+  html = {https://arxiv.org/abs/2609.27992},
   tldr = {We prove Shor's orthogonal-measurement conjecture, revealing the structure of information-optimal quantum measurements and advancing quantum information theory.},
 }
 @article{wang2026counterexamples,
@@ -39,18 +51,19 @@
   additional_info = {, In submission},
   tldr = {We prove complementary correlation bounds for all two-qubit states, enabling tomography-free certification of quantum resources.},
 }
-@article{wang2026more,
-  abbr = {Bytedance seed},
+@inproceedings{wang2026more,
+  abbr = {NeurIPS 2026},
   _bibtex_show = {true},
   title={More Expressive Feedforward Layers: Part I. Token-Adaptive Mixing of Activations},
   author={Wang*, Mingze and Wang*, Jinbo and Xia, Yikuan and Shen, Kai and Zhong, Shu},
-  journal={arXiv preprint arXiv:2605.26647},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2026},
   html = {https://arxiv.org/abs/2605.26647},
-  additional_info = {, In submission},
+  additional_info = {, Bytedance Seed},
   tldr = {We propose Token-Adaptive Mixing, an architectural enhancement for feedforward layers that adaptively mixes activations based on token characteristics, improving expressiveness and performance in language models.},
   abstract = {Feedforward network (FFN) layers account for a large fraction of parameters and nonlinear expressivity in Transformer-based large language models (LLMs). Despite the evolution from ReLU and GELU to gated variants such as SwiGLU, most FFN designs still use a single fixed activation function, applying the same nonlinear transformation to all tokens. In this work, we propose Mixture of Activations (MoA), a token-adaptive FFN design that mixes a dictionary of activation functions using lightweight input-dependent gates while sharing the same linear projections. As an input-independent counterpart, we also introduce learnable activations (LA), which form linear combinations of activation functions for both ReLU-type and SwiGLU-type FFNs. Theoretically, we establish strict finite-width expressive separations among fixed-activation FFNs, LA, and MoA: LA strictly contains fixed-activation FFNs, while MoA strictly contains LA, with the additional expressivity arising from input-dependent nonlinear hybridization. Empirically, we evaluate MoA through extensive pre-training experiments on dense and MoE language models ranging from 0.12B to 2B parameters under different token budgets, optimizers, and learning rate schedules. MoA consistently achieves lower terminal loss and exhibits more favorable scaling behavior than well-tuned baselines, with minimal parameter and computational overhead. These results suggest that token-adaptive activation mixing is a simple and effective mechanism for improving FFN expressivity in LLMs.},
 }
+
 
 @article{huang2026stabilizing,
   abbr = {Tencent HY},
@@ -59,20 +72,20 @@
   author = {Huang*, Guanhua and Xu*, Tingqiang and Wang*, Jinbo and Sheng, Guangming and Li, Siheng and Yang, Evander and Li, Kejiao and Li, Yunxiang and Xu, Zenan and Yi, Qi and Deng, Kyrierl and Nan, Ziyuan and Jiang, Yuhao and Zhang, Chenchen and Wu, Taiqiang and Zhang, Feiyuan and Wang, Junhao and Zhou, Bo and Chen, Alex and Wang, Di and Yao, Shunyu},
   journal = {Tencent HunYuan Research Blog},
   year = {2026},
-  html = {https://hy.tencent.com/research/100015},
+  blog = {https://hy.tencent.com/research/100015},
   tldr = {We present GradLoc: transferring RLVR training collapse diagnostic from black-box heuristics to white-box fine-grained token localization via a distributed bisection, paired with layerwise clipping as a practical safeguard.},
   wechat = {https://mp.weixin.qq.com/s/Q3iiBg7ODdKgbMwdEfrNGQ},
   selected = {true}
 }
 
 @inproceedings{li2026scaling,
-  abbr = {ICLR Workshop},
+  abbr = {NeurIPS Spotlight},
   _bibtex_show = {true},
   title = {Scaling-Law Analysis of {SignSGD}: From Feature-Space Linear Regression to {LLM} Pre-training},
   author = {Li*, Binghui and Wang*, Jianan and Wang*, Jinbo and Wang*, Lean and Wang*, Zilin and Wu, Lei},
-  booktitle = {ICLR 2026 Workshop on Scientific Methods for Understanding Deep Learning (Sci4DL)},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year = {2026},
-  additional_info = {, In submission (Alphabetical order)},
+  additional_info = {, **Spotlight** (updated version titled "How Can SignSGD Outperform SGD? A Functional Scaling Law Perspective"). Also presented at ICLR 2026 Sci4DL Workshop. Authors in alphabetical order},
   tldr = {We develop a scaling law analysis for SignSGD, to understand why it outperforms SGD in large-scale training.},
   html = {https://openreview.net/forum?id=KQfV97S12I},
   abstract = {Despite their widespread use in deep learning, the mechanisms underlying the effectiveness of adaptive gradient methods in large-scale training remain poorly understood. In this work, we provide a scaling-law analysis of SignSGD, a minimal yet expressive optimizer that captures the core coordinate-wise adaptivity shared by more sophisticated adaptive methods. We consider feature-space linear regression with power-law spectra, which allows us to precisely characterize the training dynamics of SignSGD. Specifically, we derive explicit scaling laws for SignSGD that accurately describe the loss dynamics. By further analyzing the data-limited regime, we characterize the phase diagram of SignSGD training and quantify the superiority of SignSGD in data scaling. We also show that SignSGD admits a substantially larger critical batch size than SGD, which gives SignSGD more benefits from large-batch training. Finally, we systematically validate our theoretical predictions through large-scale LLM pre-training experiments, demonstrating that the scaling laws uncovered here extend beyond the controlled model and are predictive of practical training behavior.},
