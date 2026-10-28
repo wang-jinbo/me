@@ -14,6 +14,7 @@
   arxiv = {2608.29296},
   blog = {https://hy.tencent.com/research/100116?langVersion=zh},
   tldr = {We study when larger batches accelerate LLM reinforcement learning, separating sample efficiency from system throughput and providing practical guidance for batch-size selection and learning-rate retuning.},
+  abstract = {Larger batches reduce the variance of stochastic gradients per update and are therefore often expected to accelerate training. Yet whether this statistical benefit translates into lower wall-clock time-to-target remains unclear, because each update consumes more samples and may take longer to execute. We study this tradeoff in reinforcement learning for large language models. We separate its algorithmic and systems effects by comparing learning and execution along their natural axes. At the algorithmic level, we compare configurations at equal cumulative sample counts while retuning batch-dependent hyperparameters. Over a bounded range of batch sizes, this procedure yields an approximately batch-size-invariant family whose members follow similar sample-indexed learning trajectories. At the systems level, we exploit the computational asymmetry between rollout generation and training: autoregressive generation is often memory-bandwidth-bound at low concurrency, whereas training work scales approximately with the number of processed tokens. Combining these two views yields a direct decision rule: a larger-batch configuration reduces time-to-target only when its throughput gain exceeds its samples-to-target penalty. Experiments with GRPO and PPO support both sides of this decomposition. At the algorithmic level, square-root learning-rate scaling with Adam produces approximately batch-size-invariant learning curves over a bounded range of batch sizes. At the systems level, larger batches improve generation throughput by up to 2.29x on fixed hardware. In GRPO, combining higher throughput with learning-rate retuning reduces time-to-target by up to 29%, whereas increasing the batch without retuning is slower despite its higher throughput.},
 }
 
 @article{wang2026shor,
@@ -27,6 +28,7 @@
   additional_info = {, In submission},
   html = {https://arxiv.org/abs/2609.27992},
   tldr = {We prove Shor's orthogonal-measurement conjecture, revealing the structure of information-optimal quantum measurements and advancing quantum information theory.},
+  abstract = {Which quantum measurement extracts the most classical information from an ensemble? We introduce the posterior algebra, a new canonical operator algebra selected by mutual information. For faithful ensembles, an affine information bound is exact precisely when this algebra is commutative; its joint spectral measurement is then optimal, and every optimal finite POVM refines it. Binary ensembles have one generator; compactness covers singular states, giving a proof of Shor's finite-dimensional binary orthogonal-measurement conjecture. The framework also gives rigidity bounds and a certified posterior-spectral receiver, validated on 408 mixed-state instances.},
 }
 @article{wang2026counterexamples,
   abbr = {arXiv},
@@ -38,6 +40,7 @@
   html = {https://arxiv.org/abs/2608.03828},
   additional_info = {, In submission},
   tldr = {We expose classical double counting in complementary measurements and disprove CQC, ECQC, and related quantum-correlation certification.},
+  abstract = {Mutually unbiased measurements are commonly expected to expose independent facets of a quantum state: a correlation that is classical in one basis should disappear in a complementary basis. In higher dimensions, however, this intuition becomes particularly subtle because correlations recovered in different settings need not represent different information. To expose this loophole, we propose a two-branch classical null test: before the setting is chosen, a shared bit selects one of two orthogonal product preparations, producing a rank-two classical--classical state, and the candidate protocol then runs unchanged. Different settings can read the same bit through different outcome patterns. This two-branch classical architecture disproves the complementary-quantum correlation (CQC) conjecture in every dimension $d\geq3$. A distinct rank-two classical--classical state disproves its complete-basis extension (ECQC) at $d=7$, with an overrun that grows without bound along prime dimensions. Its qutrit CQC instance also gives classical false positives for a proposed quantum-correlation measure and a proposed one-sided semi-device-independent steering criterion, and refutes a conditional-probability conjecture. The failures identify the missing requirement: information read in different settings must be nonredundant. In experiments and applications, the same low-overhead architecture can serve as a calibration test before a multibasis score is assigned quantum meaning.},
 }
 
 @article{wang2026complementary,
@@ -50,6 +53,7 @@
   html = {https://arxiv.org/abs/2608.04916},
   additional_info = {, In submission},
   tldr = {We prove complementary correlation bounds for all two-qubit states, enabling tomography-free certification of quantum resources.},
+  abstract = {Extracting total correlations from a quantum system usually requires reconstructing its state, whereas many experiments access only a few measurement settings. A possible shortcut is to add the mutual informations obtained from complementary measurements; in dimensions above two, however, this procedure can count the same classical correlation twice. We establish that qubits are protected from such overcounting. For every two-qubit state, the correlations observed in two complementary local bases are bounded by the premeasurement quantum mutual information. The proof traces this protection to binary-entropy curvature on the Bloch ball and combines a qubit information-exclusion tradeoff with data processing under local dephasing. Consequently, two correlation tables give a tomography-free lower bound on total correlation. A score above one bit also certifies a quantitative one-way entanglement-distillation rate; when applied to the Choi state of a qubit channel, the same data lower bound its quantum capacity. The theorem therefore identifies both an operational use of complementarity and the trusted two-dimensional setting in which its correlation accounting is valid.},
 }
 @inproceedings{wang2026more,
   abbr = {NeurIPS},
@@ -74,6 +78,7 @@
   year = {2026},
   blog = {https://hy.tencent.com/research/100015},
   tldr = {We present GradLoc: transferring RLVR training collapse diagnostic from black-box heuristics to white-box fine-grained token localization via a distributed bisection, paired with layerwise clipping as a practical safeguard.},
+  abstract = {Frequent gradient spikes and training collapse hinder reinforcement learning with verifiable rewards (RLVR). We introduce the Gradient Anomaly Localizer (GradLoc), a distributed diagnostic tool that traces global gradient spikes to individual tokens through binary search with adaptive thresholds. GradLoc activates only when an anomaly is detected and leaves the optimization objective and parameter updates unchanged. Token-level diagnosis reveals that semantically coherent tokens can have pathological numerical properties. Beyond training-inference mismatch, it identifies severe gradient heterogeneity across layers even when importance sampling ratios remain within a reasonable range. In this setting, a few anomalous layers dominate the global gradient norm, causing global clipping to suppress updates in otherwise healthy layers. We therefore introduce Layerwise Gradient Clipping (LayerClip), which constrains each layer separately using its historical gradient statistics and improves RLVR training stability. Together, GradLoc and LayerClip provide a practical framework for diagnosing and mitigating training collapse.},
   wechat = {https://mp.weixin.qq.com/s/Q3iiBg7ODdKgbMwdEfrNGQ},
   selected = {true}
 }
@@ -96,6 +101,7 @@
   title={{SWE}-Mutation: Can {LLM}s Generate Reliable Test Suites in Software Engineering?},
   author={Yuxuan Sun and Yuze Zhao and Yufeng Wang and Yao Du and Zhiyuan Ma and Jinbo Wang and Mengdi Zhang and Kai Zhang and Zhenya Huang},
   booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  tldr = {We introduce SWE-Mutation, a multilingual repository-level benchmark that uses agent-generated semantic mutants to evaluate LLM test generation and repair, revealing persistent weaknesses in bug detection.},
   abstract = {Evaluating software engineering capabilities has become a core component of modern large language models (LLMs); however, the key bottleneck hindering further scaling lies not in the scarcity of high-quality solutions, but in the lack of high-quality test suites. Test suites are indispensable both for synthesizing program repair trajectories and for providing precise feedback signals in reinforcement learning. Unfortunately, due to the high cost and difficulty of annotation, high-quality test suites have long been hard to obtain, while those automatically generated by LLMs tend to be superficial and lack sufficient discriminative power. As a first step toward constructing high-quality test suites, we introduce SWE-Mutation, a benchmark for evaluating LLM-generated test suites. The benchmark characterizes test suites by introducing systematically mutated solutions that attempt to ``fool'' the test suites and pass validation. We further propose an agentic, language-agnostic framework for automatically generating complex mutants. Our benchmark consists of 2,636 mutated variants derived from 800 original instances and includes a multilingual subset spanning nine programming languages. Experiments on seven LLMs reveal that even DeepSeek-V3.1 achieves only 10.20% verification and 36.15% detection rates, highlighting the inadequacy of current LLMs. Additionally, our agentic mutation strategy enhances realism, reducing average detection rates from 71.04% to 39.81% compared to conventional methods. These findings expose persistent deficiencies in the ability of current LLMs to generate reliable and discriminative test suites.},
   year={2026},
   html = {https://aclanthology.org/2026.findings-acl.1976/},
@@ -120,11 +126,12 @@ extensive LLM pretraining experiments—covering both Dense and MoE architecture
 % right, 2025 accepted, 2026 conference
 
 @article{zhou2026how,
-  abbr = {Preparation},
+  abbr = {arXiv},
   title={How Does Local Landscape Geometry Evolve in Language Model Pre-Training?},
-  author={Zhanpeng Zhou and Yuhan Sun and Bingrui Li and Jinbo Wang and Huaijin Wu and Lei Wu and Junchi Yan},
+  author={Zhou*, Zhanpeng and Sun*, Yuhan and Li, Bingrui and Wang, Jinbo and Wu, Huaijin and Wu, Lei and Yan, Junchi},
   year={2025},
-  journal = {Preparation},
+  journal = {arXiv preprint arXiv:2609.39767},
+  arxiv = {2609.39767},
   additional_info = {, In submission},
   tldr = {We study how loss landscape geometry evolves during LLM pre-training, explaining learning-rate warmup and yielding batch-size scheduling that substantially improve data efficiency.},
   abstract = {The scale and expense of pre-training language models make efficient hyperparameter tuning essential, yet a principled guidance is still missing. Recent work shows that the geometry of loss landscape shapes training dynamics of neural networks and further informs hyperparameter choices. In this work, we analyze language model pre-training dynamics from a local landscape geometry perspective. Our study reveals two distinct phases. In the early phase, sharpness of the local landscape is initially high, leading to instability and loss plateaus under large learning rates (LRs). Later, the landscape shifts from sharp to flatter regions. This dynamic explains the necessity of LR warmup and further suggests that larger peak LRs require proportionally longer warmup periods. In the late phase, the local landscape is governed by the gradient noise scale. Through diffusion-limit analysis, we prove a depth–flatness trade-off: high noise from smaller batches widens the loss basin, whereas reduced noise from larger batches deepens it. This theory motivates a dynamic batch-size (BS) scheduler that begins with a small BS and increases it late in training. Together, we provide a unified account of loss landscape evolution, which translates into actionable tuning strategies for large-scale pre-training.},
