@@ -79,7 +79,11 @@ layout: default
     <!-- Service and teaching -->
     {% if page.academic_service or page.teaching %}
       <h2>
-        Service{% if page.teaching %} and Teaching{% endif %}
+        {% if page.academic_service -%}
+          Service{% if page.teaching %} and Teaching{% endif -%}
+        {%- else -%}
+          Teaching
+        {%- endif %}
       </h2>
       {{ page.academic_service | markdownify }}
       {% if page.teaching %}

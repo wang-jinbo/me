@@ -16,11 +16,11 @@ profile:
 education: true # includes education section from education.bib
 selected_papers: false
 publications_link: true
-academic_service: |
-  Reviewer for
-
-  - **Conferences:** Conference on Neural Information Processing Systems (NeurIPS); International Conference on Machine Learning (ICML, **Gold Reviewer**); International Conference on Learning Representations (ICLR).
-  - **Journals:** Transactions on Machine Learning Research (TMLR); IEEE Transactions on Affective Computing.
+# academic_service: |
+#   Reviewer for
+#
+#   - **Conferences:** Conference on Neural Information Processing Systems (NeurIPS); International Conference on Machine Learning (ICML, **Gold Reviewer**); International Conference on Learning Representations (ICLR).
+#   - **Journals:** Transactions on Machine Learning Research (TMLR); IEEE Transactions on Affective Computing.
 teaching: |
   - **Probability Theory and Mathematical Statistics B**, Peking University (2022 Fall).
   - **Linear Algebra A2**, University of Science and Technology of China (2021 Fall).
