@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: publications by categories in reversed chronological order. * means equal contribution. First release year determines grouping; conference years are shown in the venue lines.
+description: publications by categories in reversed chronological order. * means equal contribution.
 nav: true
 nav_order: 2
 ---

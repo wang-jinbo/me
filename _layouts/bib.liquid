@@ -201,6 +201,22 @@
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
+      {% if page.permalink == '/publications/' and entry.conference_year and entry.conference_year != entry.year %}
+        <span class="publication-year-wrapper">
+          <button
+            type="button"
+            class="publication-year-info"
+            aria-label="About the publication year of {{ entry.title | escape }}"
+            aria-expanded="false"
+            aria-controls="publication-year-{{ entry.key }}-note"
+          >
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          </button>
+          <span id="publication-year-{{ entry.key }}-note" class="publication-year-note" role="note" hidden>
+            This work was completed in {{ entry.year }} and formally published in {{ entry.conference_year }}.
+          </span>
+        </span>
+      {% endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}

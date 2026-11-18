@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".publication-year-info").forEach((trigger) => {
+    const note = document.getElementById(trigger.getAttribute("aria-controls"));
+    const close = () => {
+      note.hidden = true;
+      trigger.setAttribute("aria-expanded", "false");
+    };
+    trigger.addEventListener("click", () => {
+      note.hidden = !note.hidden;
+      trigger.setAttribute("aria-expanded", String(!note.hidden));
+    });
+    trigger.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+    document.addEventListener("click", (event) => {
+      if (!trigger.parentElement.contains(event.target)) close();
+    });
+  });
+
   const toggleSpecs = [
     { trigger: "a.tldr", target: ".tldr.hidden" },
     { trigger: "a.abstract", target: ".abstract.hidden" },
