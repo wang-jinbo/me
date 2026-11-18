@@ -1,4 +1,6 @@
 "wang":
+  - firstname: ["Wei"]
+    url: https://scholar.google.com/citations?user=0zSeT3oAAAAJ
   - firstname: ["Mingze"]
     url: https://wmz9.github.io/
   - firstname: ["Lean"]
@@ -23,6 +25,8 @@
     url: https://zzp1012.github.io/
 
 "wu":
+  - firstname: ["Huaijin"]
+    url: https://scholar.google.com/citations?user=aA9A8_8AAAAJ
   - firstname: ["Lei"]
     url: https://leiwu0.github.io/
 
@@ -122,3 +126,15 @@
 "zhong":
   - firstname: ["Shu"]
     url: https://scholar.google.com/citations?user=cebDRvYAAAAJ
+
+"hou":
+  - firstname: ["Pengcheng"]
+    url: https://scholar.google.com/citations?user=m72Yju0AAAAJ
+
+"pei":
+  - firstname: ["Peng"]
+    url: https://www.linkedin.com/in/peng-pei-7584a839/
+
+"he":
+  - firstname: ["Haotian"]
+    url: https://scholar.google.com/citations?user=sCYwp4kAAAAJ
