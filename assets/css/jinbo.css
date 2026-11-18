@@ -50,3 +50,10 @@
 .font-weight-bolder {
   font-weight: 700;
 }
+
+.publication-distinction {
+  color: #c62828;
+}
+html[data-theme="dark"] .publication-distinction {
+  color: #ff6b6b;
+}
